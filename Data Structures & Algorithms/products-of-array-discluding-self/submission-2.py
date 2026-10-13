@@ -7,7 +7,6 @@ class Solution:
         for i in range(1, arr_len):
             sol[i] *= sol[i-1] * nums[i-1]
 
-
         suffix = 1
         for i in range(arr_len - 2, -1, -1):
             sol[i] *= suffix * nums[i+1]
